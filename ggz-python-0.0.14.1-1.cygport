@@ -1,0 +1,20 @@
+inherit ggz python
+
+MAKEOPTS+=" -j1"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+	doggzmod */module.dsc
+	ggz_postinst
+
+	grep -rl Numeric ${D}/usr | xargs sed -i -e 's|Numeric|numpy.oldnumeric|g'
+	python_optimize ${PYTHON_SITELIB} /usr/lib/${PN}
+}

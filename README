@@ -1,0 +1,257 @@
+ggz-python
+------------------------------------------
+GGZ Gaming Zone python bindings, clients, and games.
+
+Complementary to ggz-sdl-games, several games and even a core client 
+have been created for SDL in Python. Games include the GGZBoard 
+framework, Xadrez Chinês (for chinese chess) and Escape/SDL. Several 
+related game servers are part of this package, too.
+
+Runtime requirements:
+  cygwin-1.5.25-11
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.14.6-1
+  libggzcore9-0.0.14.1-1
+  libggzdmod6-0.0.14.1-1
+  libggzmod4-0.0.14.1-1
+  librsvg2-2.20.0-1
+  python-2.5.2-1
+  python-numpy-1.0.4-1
+  python-pygame-1.8.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20060817-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.ggzgamingzone.org/packages/
+
+Canonical download:
+  ftp://ftp.ggzgamingzone.org/pub/ggz/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ggz-python-0.0.14.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ggz-python-0.0.14.1-X.cygport all
+
+This will create:
+  /usr/src/ggz-python-0.0.14.1-X-src.tar.bz2
+  /usr/src/ggz-python-0.0.14.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/ggz/games/escape-sdl.dsc
+  /etc/ggz/games/goclient.dsc
+  /etc/ggz/games/xadrez-chines.dsc
+  /etc/ggzd/games/goserver.dsc
+  /etc/ggzd/games/server_checkers.dsc
+  /etc/ggzd/games/server_hnefatafl.dsc
+  /etc/ggzd/games/server_ludo.dsc
+  /etc/ggzd/games/xadrez-chines-server.dsc
+  /etc/ggzd/rooms/goserver.room
+  /etc/ggzd/rooms/server_checkers.room
+  /etc/ggzd/rooms/server_hnefatafl.room
+  /etc/ggzd/rooms/server_ludo.room
+  /etc/ggzd/rooms/xadrez-chines-server.room
+  /etc/postinstall/ggz-python.sh
+  /etc/preremove/ggz-python.sh
+  /usr/bin/escape-sdl
+  /usr/bin/ggzboard
+  /usr/bin/vibora
+  /usr/bin/xadrez-chines
+  /usr/lib/ggz-python/common/playertable.py
+  /usr/lib/ggz-python/common/playertable.pyc
+  /usr/lib/ggz-python/common/playertable.pyo
+  /usr/lib/ggz-python/ggzboard/bogaprot.py
+  /usr/lib/ggz-python/ggzboard/bogaprot.pyc
+  /usr/lib/ggz-python/ggzboard/bogaprot.pyo
+  /usr/lib/ggz-python/ggzboard/bogaprotclient.py
+  /usr/lib/ggz-python/ggzboard/bogaprotclient.pyc
+  /usr/lib/ggz-python/ggzboard/bogaprotclient.pyo
+  /usr/lib/ggz-python/ggzboard/ggzboard_net.py
+  /usr/lib/ggz-python/ggzboard/ggzboard_net.pyc
+  /usr/lib/ggz-python/ggzboard/ggzboard_net.pyo
+  /usr/lib/ggz-python/ggzboard/module_backgammon.py
+  /usr/lib/ggz-python/ggzboard/module_backgammon.pyc
+  /usr/lib/ggz-python/ggzboard/module_backgammon.pyo
+  /usr/lib/ggz-python/ggzboard/module_checkers.py
+  /usr/lib/ggz-python/ggzboard/module_checkers.pyc
+  /usr/lib/ggz-python/ggzboard/module_checkers.pyo
+  /usr/lib/ggz-python/ggzboard/module_chess.py
+  /usr/lib/ggz-python/ggzboard/module_chess.pyc
+  /usr/lib/ggz-python/ggzboard/module_chess.pyo
+  /usr/lib/ggz-python/ggzboard/module_connectx.py
+  /usr/lib/ggz-python/ggzboard/module_connectx.pyc
+  /usr/lib/ggz-python/ggzboard/module_connectx.pyo
+  /usr/lib/ggz-python/ggzboard/module_go.py
+  /usr/lib/ggz-python/ggzboard/module_go.pyc
+  /usr/lib/ggz-python/ggzboard/module_go.pyo
+  /usr/lib/ggz-python/ggzboard/module_hnefatafl.py
+  /usr/lib/ggz-python/ggzboard/module_hnefatafl.pyc
+  /usr/lib/ggz-python/ggzboard/module_hnefatafl.pyo
+  /usr/lib/ggz-python/ggzboard/module_madn.py
+  /usr/lib/ggz-python/ggzboard/module_madn.pyc
+  /usr/lib/ggz-python/ggzboard/module_madn.pyo
+  /usr/lib/ggz-python/ggzboard/module_reversi.py
+  /usr/lib/ggz-python/ggzboard/module_reversi.pyc
+  /usr/lib/ggz-python/ggzboard/module_reversi.pyo
+  /usr/lib/ggz-python/ggzboard/module_shogi.py
+  /usr/lib/ggz-python/ggzboard/module_shogi.pyc
+  /usr/lib/ggz-python/ggzboard/module_shogi.pyo
+  /usr/lib/ggz-python/ggzboard/module_sudoku.py
+  /usr/lib/ggz-python/ggzboard/module_sudoku.pyc
+  /usr/lib/ggz-python/ggzboard/module_sudoku.pyo
+  /usr/lib/ggz-python/ggzboard/net_checkers.py
+  /usr/lib/ggz-python/ggzboard/net_checkers.pyc
+  /usr/lib/ggz-python/ggzboard/net_checkers.pyo
+  /usr/lib/ggz-python/ggzboard/net_chess.py
+  /usr/lib/ggz-python/ggzboard/net_chess.pyc
+  /usr/lib/ggz-python/ggzboard/net_chess.pyo
+  /usr/lib/ggz-python/ggzboard/net_connectx.py
+  /usr/lib/ggz-python/ggzboard/net_connectx.pyc
+  /usr/lib/ggz-python/ggzboard/net_connectx.pyo
+  /usr/lib/ggz-python/ggzboard/net_go.py
+  /usr/lib/ggz-python/ggzboard/net_go.pyc
+  /usr/lib/ggz-python/ggzboard/net_go.pyo
+  /usr/lib/ggz-python/ggzboard/net_hnefatafl.py
+  /usr/lib/ggz-python/ggzboard/net_hnefatafl.pyc
+  /usr/lib/ggz-python/ggzboard/net_hnefatafl.pyo
+  /usr/lib/ggz-python/ggzboard/net_madn.py
+  /usr/lib/ggz-python/ggzboard/net_madn.pyc
+  /usr/lib/ggz-python/ggzboard/net_madn.pyo
+  /usr/lib/ggz-python/ggzboard/net_reversi.py
+  /usr/lib/ggz-python/ggzboard/net_reversi.pyc
+  /usr/lib/ggz-python/ggzboard/net_reversi.pyo
+  /usr/lib/ggz-python/xadrez-chines/xadrezlib.py
+  /usr/lib/ggz-python/xadrez-chines/xadrezlib.pyc
+  /usr/lib/ggz-python/xadrez-chines/xadrezlib.pyo
+  /usr/lib/ggz/goclient
+  /usr/lib/ggz/goclient.helper
+  /usr/lib/ggzd/goserver
+  /usr/lib/ggzd/server_checkers.py
+  /usr/lib/ggzd/server_hnefatafl.py
+  /usr/lib/ggzd/server_ludo.py
+  /usr/lib/ggzd/xadrez-chines-server
+  /usr/lib/python2.5/site-packages/GGZChess-0.1-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/GGZCore-0.1-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/GGZDMod-0.3-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/GGZMod-0.3-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/RSVGSDL-0.1-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/ggzchess.dll
+  /usr/lib/python2.5/site-packages/ggzcoresimple.dll
+  /usr/lib/python2.5/site-packages/ggzdmod.dll
+  /usr/lib/python2.5/site-packages/ggzmod.dll
+  /usr/lib/python2.5/site-packages/ggzsettings.py
+  /usr/lib/python2.5/site-packages/ggzsettings.pyc
+  /usr/lib/python2.5/site-packages/ggzsettings.pyo
+  /usr/lib/python2.5/site-packages/rsvgsdl.dll
+  /usr/lib/python2.5/site-packages/sdlnewstuff.py
+  /usr/lib/python2.5/site-packages/sdlnewstuff.pyc
+  /usr/lib/python2.5/site-packages/sdlnewstuff.pyo
+  /usr/share/applications/escape-sdl.desktop
+  /usr/share/applications/ggzboard.desktop
+  /usr/share/applications/vibora.desktop
+  /usr/share/applications/xadrez-chines.desktop
+  /usr/share/doc/ggz-python-0.0.14.1/AUTHORS
+  /usr/share/doc/ggz-python-0.0.14.1/COPYING
+  /usr/share/doc/ggz-python-0.0.14.1/ChangeLog
+  /usr/share/doc/ggz-python-0.0.14.1/INSTALL
+  /usr/share/doc/ggz-python-0.0.14.1/NEWS
+  /usr/share/doc/ggz-python-0.0.14.1/README
+  /usr/share/ggz/ggzboard/background.png
+  /usr/share/ggz/ggzboard/checkers/king-black.svg
+  /usr/share/ggz/ggzboard/checkers/king-white.svg
+  /usr/share/ggz/ggzboard/checkers/piece-black.svg
+  /usr/share/ggz/ggzboard/checkers/piece-white.svg
+  /usr/share/ggz/ggzboard/chess/bishop_b.svg
+  /usr/share/ggz/ggzboard/chess/bishop_w.svg
+  /usr/share/ggz/ggzboard/chess/king_b.svg
+  /usr/share/ggz/ggzboard/chess/king_w.svg
+  /usr/share/ggz/ggzboard/chess/knight_b.svg
+  /usr/share/ggz/ggzboard/chess/knight_w.svg
+  /usr/share/ggz/ggzboard/chess/pawn_b.svg
+  /usr/share/ggz/ggzboard/chess/pawn_w.svg
+  /usr/share/ggz/ggzboard/chess/queen_b.svg
+  /usr/share/ggz/ggzboard/chess/queen_w.svg
+  /usr/share/ggz/ggzboard/chess/rook_b.svg
+  /usr/share/ggz/ggzboard/chess/rook_w.svg
+  /usr/share/ggz/ggzboard/common/icon.png
+  /usr/share/ggz/ggzboard/connectx/player1.svg
+  /usr/share/ggz/ggzboard/connectx/player2.svg
+  /usr/share/ggz/ggzboard/go/piece-black.svg
+  /usr/share/ggz/ggzboard/go/piece-white.svg
+  /usr/share/ggz/ggzboard/hnefatafl/king-white.svg
+  /usr/share/ggz/ggzboard/hnefatafl/piece-black.svg
+  /usr/share/ggz/ggzboard/hnefatafl/piece-white.svg
+  /usr/share/ggz/ggzboard/madn/dice-1.svg
+  /usr/share/ggz/ggzboard/madn/dice-2.svg
+  /usr/share/ggz/ggzboard/madn/dice-3.svg
+  /usr/share/ggz/ggzboard/madn/dice-4.svg
+  /usr/share/ggz/ggzboard/madn/dice-5.svg
+  /usr/share/ggz/ggzboard/madn/dice-6.svg
+  /usr/share/ggz/ggzboard/madn/poeppel-black.svg
+  /usr/share/ggz/ggzboard/madn/poeppel-blue.svg
+  /usr/share/ggz/ggzboard/madn/poeppel-green.svg
+  /usr/share/ggz/ggzboard/madn/poeppel-red.svg
+  /usr/share/ggz/ggzboard/madn/poeppel-yellow.svg
+  /usr/share/ggz/ggzboard/reversi/piece-black.svg
+  /usr/share/ggz/ggzboard/reversi/piece-white.svg
+  /usr/share/ggz/ggzboard/shogi/b-bishop.svg
+  /usr/share/ggz/ggzboard/shogi/b-gold-general.svg
+  /usr/share/ggz/ggzboard/shogi/b-king.svg
+  /usr/share/ggz/ggzboard/shogi/b-knight.svg
+  /usr/share/ggz/ggzboard/shogi/b-lance.svg
+  /usr/share/ggz/ggzboard/shogi/b-pawn.svg
+  /usr/share/ggz/ggzboard/shogi/b-rook.svg
+  /usr/share/ggz/ggzboard/shogi/b-silver-general.svg
+  /usr/share/ggz/ggzboard/shogi/bishop.svg
+  /usr/share/ggz/ggzboard/shogi/gold-general.svg
+  /usr/share/ggz/ggzboard/shogi/king.svg
+  /usr/share/ggz/ggzboard/shogi/knight.svg
+  /usr/share/ggz/ggzboard/shogi/lance.svg
+  /usr/share/ggz/ggzboard/shogi/pawn.svg
+  /usr/share/ggz/ggzboard/shogi/rook.svg
+  /usr/share/ggz/ggzboard/shogi/silver-general.svg
+  /usr/share/ggz/vibora/background.png
+  /usr/share/ggz/vibora/logo.png
+  /usr/share/ggz/xadrez-chines/themes/dark/bishop.png
+  /usr/share/ggz/xadrez-chines/themes/dark/bodyguard.png
+  /usr/share/ggz/xadrez-chines/themes/dark/cannon.png
+  /usr/share/ggz/xadrez-chines/themes/dark/king.png
+  /usr/share/ggz/xadrez-chines/themes/dark/knight.png
+  /usr/share/ggz/xadrez-chines/themes/dark/pawn.png
+  /usr/share/ggz/xadrez-chines/themes/dark/rock.png
+  /usr/share/ggz/xadrez-chines/themes/orig/bishop.png
+  /usr/share/ggz/xadrez-chines/themes/orig/bodyguard.png
+  /usr/share/ggz/xadrez-chines/themes/orig/cannon.png
+  /usr/share/ggz/xadrez-chines/themes/orig/king.png
+  /usr/share/ggz/xadrez-chines/themes/orig/knight.png
+  /usr/share/ggz/xadrez-chines/themes/orig/pawn.png
+  /usr/share/ggz/xadrez-chines/themes/orig/rock.png
+  /usr/share/locale/de/LC_MESSAGES/ggzpython.mo
+  /usr/share/man/man6/escape-sdl.6.gz
+  /usr/share/man/man6/ggzboard.6.gz
+  /usr/share/man/man6/vibora.6.gz
+  /usr/share/man/man6/xadrez-chines.6.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.0.14.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
