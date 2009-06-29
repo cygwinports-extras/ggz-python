@@ -1,5 +1,5 @@
 category: Games Python
-requires: cygwin glib2 gdk-pixbuf2 libggzcore9 libggzdmod6 libggzmod4 librsvg2 python python-numpy python-pygame
+requires: glib2 gdk-pixbuf2 libggzcore9 libggzdmod6 libggzmod4 librsvg2 python python-numpy python-pygame
 sdesc: "GGZ Gaming Zone python bindings, clients, and games"
 ldesc: "Complementary to ggz-sdl-games, several games and even a core 
 client have been created for SDL in Python. Games include the GGZBoard 
